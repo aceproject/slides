@@ -5,8 +5,7 @@
     <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var query = window.location.search.substring(1);
-        alert(query);
-        var slideshow = remark.create({sourceUrl: query ? query : "sample.md"});
+        var slideshow = remark.create({sourceUrl: query ? "./" + query : "./sample.md"});
     </script>
 </body>
 </html>
