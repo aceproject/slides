@@ -11,6 +11,7 @@ layout: false
     ![my](./images/my.jpg)
 ]
 .right-column[
+- ###角田祐一
 - ###ＡＣＥ @ace_project
 - ###フリーランスエンジニア
 - ###浦和在住グンマー県民
@@ -61,9 +62,9 @@ class: center, middle
 ##ビビる！！！」
 ---
 # Node.jsをはじめてみて
-- とりあえずWorkshopperで勉強
-- Webアプリ作ってみよう
-- MEANスタック
+- ##とりあえずWorkshopperで勉強
+- ##Webアプリ作ってみよう
+- ##MEANスタック
 ---
 #MEANスタック？
 - ##**M**ongoDB
@@ -78,7 +79,19 @@ class: center, middle
 - ##**N**ode.js
 ---
 #Webアプリを作るとなったらテスト書きたい
-- Mochaというテストフレームワークが凄いらしい
+- Perlの人なのでテスト書きたい
+- TDD(Test-Driven Development)
+---
+#TDDの例
+index.htmlを作る場合
+```javascript
+describe('get', function(){
+    statusCodeIs("http://test.com/index.html", 200);
+})
+```
+---
+#Node.jsのテストフレームワーク
+- Mochaが凄いらしい
 ---
 #Reporterがすごい
 -dot
