@@ -1,8 +1,9 @@
 layout: true
 class: center, middle, inverse
 ---
-## 東京Node学園付属小学校 1時限目
-## 「Node.jsオレオレ勉強法」
+## Gunma.web #22
+## 「オレオレ勉強法(Node.js編)」
+### @ace
 ---
 layout: false
 # self-introduction  
@@ -12,18 +13,17 @@ layout: false
 ]
 .right-column[
 - ###角田祐一
-- ###ＡＣＥ @ace_project
+- ###ace @ace_project
 - ###フリーランスエンジニア
 - ###浦和在住グンマー県民
-（都内に引越し予定）
-- ###Hachioji.pm GunmaWeb
-- ###Noder歴２ヶ月ぐらい
+- ###Hachioji.pm Node学園
 ]
 ---
 # Work
 ***
 - ###Webサービスの運営、開発
 - ###普段は100%Perl
+- ###趣味でNodeはじめてみた
 - ###引きこもり（完全在宅）
 ---
 # Hobby
@@ -39,7 +39,7 @@ layout: true
 class: center, middle, inverse
 ---
 # 本題
-# 「Node.jsオレオレ勉強法」
+## 「オレオレ勉強法(Node.js編)」
 ---
 layout: false
 #きっかけ
@@ -61,22 +61,67 @@ class: center, middle
 ##「大根も１０００本あったら  
 ##ビビる！！！」
 ---
-# Node.jsをはじめてみて
-- ##とりあえずWorkshopperで勉強
-- ##Webアプリ作ってみよう
-- ##MEANスタック
+# Node.jsとは
+- サーバーサイドJavascript
+- 開発が超活発
+- ノンブロッキングI/O
 ---
-#MEANスタック？
+# 開発が超活発
+- Node v4.0.0  2015/9/8
+- Node v5.0.0  2015/10/29
+  悪く言うと過渡期（セオリーがない）
+---
+# 対して・・・
+- Perl 5.6.0   2000/5/2
+- Perl 6.0.0   2015/12/25
+---
+# ノンブロッキングI/Oとは？
+- Node.js
+```node.js
+var buf = fs.readFile('data.txt', function(err, buf){
+        if(!err){
+                console.log('success!');
+        }
+}
+console.log('hello world');
+```
+---
+# ノンブロッキングI/Oとは？
+- Node.js
+```node.js
+var buf = fs.readFile('data.txt', function(err, buf){
+        if(!err){
+                console.log('success!');
+        }
+}
+console.log('hello world');
+```
+- 結果
+```node.js
+hello world success!
+```
+---
+# オレオレ勉強法その１
+- workshopper
+---
+# オレオレ勉強法その２
+- 一度に全部やろうとしない
+---
+#MEANスタック
 - ##**M**ongoDB
 - ##**E**xpress
 - ##**A**ngular.js
 - ##**N**ode.js
+(LAMPとかXAMPPみたいなバンドル)
 ---
 #ひとまず
 - ##~~**M**ongoDB~~
 - ##**E**xpress
 - ##~~**A**ngular.js~~
 - ##**N**ode.js
+---
+#オレオレ勉強法その３
+- とりあえずクソモジュール作る
 ---
 #Webアプリを作るとなったらテスト書きたい
 - Perlの人なのでテスト書きたい
@@ -171,12 +216,6 @@ class: center, middle
 # どうでもいい話ですが
 # 犬派です
 ---
-class: center, middle
-# 安心してください
----
-class: center, middle
-# 作りました
----
 # mocha-bow-reporter
 <img src="./images/bow.png" width="800px">
 https://github.com/aceproject/mocha-bow-reporter
@@ -215,6 +254,8 @@ _   -_-_-_-_-_-_-_-_- ＼(＿＿_)
 ```
 ---
 # まとめ
+###workshopperおすすめ
+
 ###やりたいことに合わせて勉強することを限定する
 - 自分のレベルに合わせる（習作でAngular、Mongo使うようなのは作らないとか）
 
